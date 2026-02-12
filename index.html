@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kartu Ucapan Spesial</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Montserrat:wght@300;400;600&display=swap">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            overflow-x: hidden;
+            color: #333;
+        }
+        
+        section {
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        /* Hero 1 Styles */
+        #hero1 {
+            background: linear-gradient(180deg, #4b8dff 0%, #7CADFF 100%);
+            
+        }
+        
+        .bottle-container {
+            position: relative;
+            cursor: pointer;
+            margin-bottom: 30px;
+        }
+        
+        .bottle {
+            width: 200px;
+            transition: all 0.5s ease;
+        }
+        
+        .letter {
+            position: absolute;
+            width: 180px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0);
+            opacity: 0;
+            transition: all 0.8s ease;
+            z-index: 10;
+        }
+        
+        .letter-open {
+            transform: translate(-50%, -50%) scale(1);
+            opacity: 1;
+        }
+        
+        .bottle-hidden {
+            opacity: 0;
+            transform: scale(0);
+        }
+        
+        /* Hero 2 Styles */
+        #hero2 {
+            background: linear-gradient(180deg, #7CADFF 0%, #fff8e1 100%);
+        }
+        
+        .message {
+            max-width: 800px;
+            font-family: 'Dancing Script', cursive;
+            font-size: 24px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        
+        /* Hero 3 Styles */
+#hero3 {
+    background: linear-gradient(180deg, #fff8e1 0%, #fce4ec 100%);
+    height: auto; /* Ubah dari 100vh ke auto */
+    min-height: 100vh; /* Tambahkan min-height */
+    padding: 40px 20px; /* Tambahkan padding atas-bawah */
+}
+
+.polaroid-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 600px; /* Lebar maksimum gallery */
+    margin: 0 auto;
+}
+
+.polaroid {
+    background: white;
+    padding: 15px 15px 30px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transform: rotate(-5deg);
+    transition: transform 0.3s;
+    width: 100%;
+}
+
+.polaroid:nth-child(even) {
+    transform: rotate(5deg);
+}
+
+.polaroid:hover {
+    transform: rotate(0deg) scale(1.05);
+}
+
+.polaroid img {
+    width: 100%;
+    height: 180px; /* Fixed height untuk konsistensi */
+    object-fit: cover; /* Pastikan gambar terisi dengan baik */
+}
+        
+        /* Hero 4 Styles */
+        #hero4 {
+            background: linear-gradient(180deg, #fce4ec 0%, #f8bbd0 100%);
+        }
+        
+        .signature {
+            font-family: 'Dancing Script', cursive;
+            font-size: 32px;
+            margin-top: 30px;
+        }
+        
+        /* Audio Player */
+        .audio-player {
+            opacity: 0;
+            transition: opacity 1s ease;
+            margin-top: 20px;
+        }
+        
+        .show-player {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero 1: Botol dengan Surat -->
+    <section id="hero1">
+        <div class="bottle-container">
+            <img src="vinil.png" alt="Botol" class="bottle" id="bottle">
+            <img src="vinil.png" alt="Surat" class="letter" id="letter">
+        </div> 
+        <br>
+        <br>
+        <p>Klik kaset vinyl untuk memutar lagu</p>
+        
+        <audio controls class="audio-player" id="audioPlayer">
+            <source src="eua.mp3" type="audio/mpeg">
+            Browser Anda tidak mendukung elemen audio.
+        </audio>
+    </section>
+    <!-- Hero 2: Paragraf Ucapan -->
+    <section id="hero2">
+        <h1>Hai Putri Matahari,</h1>
+        <div class="message">
+            <p>akhirnya kita bisa merayakan Valentine pertama kita dan kita bentar lagi udah 2 tahun bersama lamanya! Semoga kita selalu diberkati Tuhan.</p>
+            <p>Selama hampir 2 tahun ini, aku udah ngerasain dan mengalami banyak hal yang nggak pernah aku bayangkan sebelumnya. Dari sedih, seneng, flat, sampai udah pernah ngerasain di-'ospek' 1 keluarga besar kamu waktu hari pertama kita ketemu WKWKWK.</p>
+        </div>
+    </section>
+    
+    <!-- Hero 3: Gallery Polaroid -->
+    
+    <!-- Hero 4: Ucapan Terima Kasih -->
+    <section id="hero3">
+       
+<p>Semenjak kamu dateng ke hidup aku, aku jadi bisa bersyukur sama hal-hal kecil, belajar sayang & memaafkan diri sendiri dan hidupku bener-bener berubah 180 derajat. Aku selalu bangga banget ceritain ke orang-orang tentang secantik apa dirimu dan sehebat apa kamu. Kamu bukan hanya cantik, kamu paket complete. Cara pandangku beneran berubah semenjak kamu ada di sisiku, aku seneng banget bisa punya kamu di sisiku.</p>
+<p>Sekali lagi, terima kasih ya udah menyinari aku. Bulan nggak akan bersinar tanpa adanya Matahari.</p>
+<p>Doaku untuk ke depannya, semoga kita bisa dapat beasiswa ke London & selalu diberkati Tuhan, Amin! Semangat LDR nya!</p>
+
+    </section>
+    <section id="hero4">
+       
+        <h1>JANGAN LUPA BACA INI!</h1>
+      <p>Kejadian 29:20 TB</p>
+        <p>Jadi bekerjalah Yakub tujuh tahun lamanya untuk mendapat Rahel itu, tetapi yang tujuh tahun itu dianggapnya seperti beberapa hari saja, karena cintanya kepada Rahel.</p>
+        <div class="signature">I Love You<br>Pangeran Bulan.</div>
+    </section>
+
+    <script>
+        // Animasi botol dan surat
+        const bottle = document.getElementById('bottle');
+        const letter = document.getElementById('letter');
+        const audioPlayer = document.getElementById('audioPlayer');
+        
+        bottle.addEventListener('click', function() {
+            // Animasi botol menghilang
+            bottle.classList.add('bottle-hidden');
+            
+            // Animasi surat muncul
+            setTimeout(() => {
+                letter.classList.add('letter-open');
+                
+                // Munculkan audio player dan mainkan lagu
+                setTimeout(() => {
+                    audioPlayer.classList.add('show-player');
+                    audioPlayer.play();
+                }, 1000);
+            }, 500);
+        });
+        
+        // Smooth scrolling untuk navigasi antar section
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
